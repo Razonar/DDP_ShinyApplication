@@ -1,9 +1,6 @@
----
-title: "Course Project: Shiny Application and Reproducible Pitch"
-author: "adiaz"
-date: "August, 2014"
-output: html_document
----
+# Course Project: Shiny Application and Reproducible Pitch
+
+Alvaro, August 2014
 
 **Shiny Application:**
 
@@ -19,4 +16,4 @@ or
 
 or
 
-<http://rpubs/razonar/DDP_ReproduciblePitch/>
+<http://rpubs.com/razonar/DDP_ReproduciblePitch/>
