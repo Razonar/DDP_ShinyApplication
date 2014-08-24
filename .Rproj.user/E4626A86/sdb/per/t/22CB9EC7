@@ -1,0 +1,16 @@
+{
+    "contents" : "library(shiny); library(ggplot2); library(grid);\n\n\n# Define server logic for random distribution application\nshinyServer(function(input, output) {\n\n    data <- reactive({   # generate the requested distribution.\n        dist <- switch(input$dist,\n                       norm = rnorm,\n                       unif = runif,\n                       lnorm = rlnorm,\n                       exp = rexp,\n                       rnorm)\n        dist(input$n)\n    })\n\n    output$text <- renderPrint({ # Generate HTML\n        doc <- tags$html(\n            tags$body(\n                h3('Summary'),\n                br(),\n                p('On the left Panel you can choose a distribution and the number of trials to see some basic commands on the above tabs.'\n                )\n            )\n        )\n        cat(as.character(doc))\n    })\n\n    output$plot <- renderPlot({    # Generate a plot\n        dist <- input$dist\n        n <- input$n\n        tit <- paste('Plot of r', dist, '(', n, ')', sep='')\n        qp1 <- qplot(data(), main=tit)\n        print(qp1)\n    })\n\n    output$summ <- renderPrint({   # Generate a summary\n        summary(data())\n    })\n\n    output$table <- renderTable({  # Generate table\n        data.frame(x=data())\n    })\n\n})\n",
+    "created" : 1408927656865.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3708564229",
+    "id" : "22CB9EC7",
+    "lastKnownWriteTime" : 1408858101,
+    "path" : "H:/Users/SkyDrive/Coursera/JHDataScience/Git/DDP_ShinyApplication/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

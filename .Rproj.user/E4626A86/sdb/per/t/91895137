@@ -1,0 +1,17 @@
+{
+    "contents" : "---\ntitle: \"Course Project: Shiny Application and Reproducible Pitch\"\nauthor: \"adiaz\"\ndate: \"August, 2014\"\noutput: html_document\n---\n\n**Shiny Application:**\n\n<https://github.com/Razonar/DDP_ShinyApplication/>\n\nor\n\n<http://razonar.shinyapps.io/DDP_ShinyApplication/>\n\n**Reproducible Pitch:**\n\n<http://razonar.github.io/DDP_ReproduciblePitch/index.html>\n\nor\n\n\n",
+    "created" : 1408858762019.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2851657709",
+    "id" : "91895137",
+    "lastKnownWriteTime" : 1408858973,
+    "path" : "H:/Users/SkyDrive/Coursera/JHDataScience/Git/DDP_ShinyApplication/readme.Rmd",
+    "project_path" : "readme.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}

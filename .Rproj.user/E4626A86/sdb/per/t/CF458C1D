@@ -1,0 +1,16 @@
+{
+    "contents" : "library(shiny)\n\n# Define UI for random distribution application\nshinyUI(fluidPage(\n\n    titlePanel(\"Examining some few distributions\"),\n\n    # Sidebar with controls\n    sidebarLayout(\n        sidebarPanel(\n            radioButtons(\"dist\", \"Distribution type:\",\n                         c(\"Normal\" = \"norm\",\n                           \"Uniform\" = \"unif\",\n                           \"Log-normal\" = \"lnorm\",\n                           \"Exponential\" = \"exp\")),\n            br(\"\"),\n            sliderInput(\"n\",\n                        \"Number of observations:\",\n                        value = 500,\n                        min = 1,\n                        max = 1000),\n            br(\"Alvao, August 2014\")\n        ),\n        # Show a tabset\n        mainPanel(\n            tabsetPanel(type = \"tabs\",\n                        tabPanel(\"Text\", htmlOutput(\"text\")),\n                        tabPanel(\"Plot\", plotOutput(\"plot\")),\n                        tabPanel(\"Summary\", verbatimTextOutput(\"summ\")),\n                        tabPanel(\"Table\", tableOutput(\"table\"))\n            )\n        )\n    )\n))",
+    "created" : 1408927663375.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3826282995",
+    "id" : "CF458C1D",
+    "lastKnownWriteTime" : 1408858012,
+    "path" : "H:/Users/SkyDrive/Coursera/JHDataScience/Git/DDP_ShinyApplication/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}
