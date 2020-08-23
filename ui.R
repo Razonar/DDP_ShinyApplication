@@ -19,7 +19,7 @@ shinyUI(fluidPage(
                         value = 500,
                         min = 1,
                         max = 1000),
-            br("Alvao, August 2014")
+            br("Alvaro Diaz Falconi, August 2020")
         ),
         # Show a tabset
         mainPanel(
