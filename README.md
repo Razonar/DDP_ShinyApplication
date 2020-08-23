@@ -1,6 +1,6 @@
 # Course Project: Shiny Application and Reproducible Pitch
 
-Alvaro, August 2014
+Alvaro Diaz Falconi, August 2020
 
 **Shiny Application:**
 
